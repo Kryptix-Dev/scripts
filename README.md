@@ -1,10 +1,10 @@
-## My Saved Scripts
+# My Saved Scripts
 
 A repo to upload scripts I've created either for use in IT or for personal projects.  Below is a listing of the scripts included in this repo and what they do.
 
 --------------------
 
-# Bash
+## Bash
 
 ### home-scanner.sh
 Used to automate scans with ClamAV, export a log file on the results and only show infections.  This was created to run a scan on login.  I didn't want to work with a GUI version of ClamAV, so I wrote this to get used to Bash scripts and the terminal.  This will first clear the daily log file so that it only shows the most recent scan.  It then runs freshclam to update the databse prior to a scan.  Once the scan is completed, there is the option to save the daily scan results into a log tracking the scan results for the month.  There is an additional option to save the month's scans with the month's name when a new month starts.  It will then send a notification on the results of the scan using grep.
