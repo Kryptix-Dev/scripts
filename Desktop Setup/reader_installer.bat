@@ -1,0 +1,1 @@
+"Reader.exe" /sAll /rs /l /msi /qb-! /norestart ALLUSERS=1 EULA_ACCEPT=YES SUPPRESS_APP_LAUNCH=YES" 
