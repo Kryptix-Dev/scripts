@@ -20,3 +20,19 @@ This folder of scripts in both VBScript and Batch were created over a series of 
 ## USB Launcher
 
 Uploaded are the key scripts I used to setup a custom launching system for apps running on a USB.  During this time in my career, I was heavy into experimentation with Linux and creating a "custom" GUI or launcher that I could take with me on a USB drive.  This was also before USB based attacks became prevelant and there wasn't a concern with using an auto launcher on USB drives.  Launch.vbs was used to pull the computer name.  This way, if it was my computer, I can have it run FreeFileSync to sync up the files on the USB to a folder on my computer.  If it wasn't, then it would launch the desktop setup files as covered above.
+
+----------------
+
+## VBScript
+
+### Launcher.vbs
+
+This is a modified version from the USB Launcher folder script.  The main difference is I used this to launch RocketDock so I had a mobile dock and app launcher as this was used for my personal USB I used while in college.  
+
+### Map Network Drive.vbs
+
+As with the Desktop Setup scripts, I created this to automate adding network drives to workstations.  We didn't have Group Policy and Active Directory setup correctly to where these drives could be mapped through there, so it was done manually by me.  This made it much quicker to map these drives.
+
+### Remotely Enable RDP (Win7).vbs
+
+This was used to enable RDP to allow for remote support with workstations within the network.  Every so often, someone else on the team would configure the workstations and RDP wouldn't be enabled.  Instead of driving to the site for a one-off, I used this to activate it.
