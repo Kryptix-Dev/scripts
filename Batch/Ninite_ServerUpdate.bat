@@ -1,0 +1,1 @@
+niniteone.exe /remote ad:OU="Domain Controllers",DC=[domain],DC=local /select "7-Zip" Air Chrome Firefox Flash "Flash (IE)" Malwarebytes Silverlight Super /updateonly /silent /disableautoupdate Server_updates.txt

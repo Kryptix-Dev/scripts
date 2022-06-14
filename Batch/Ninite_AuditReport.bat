@@ -1,0 +1,1 @@
+niniteone.exe /remote ad:OU=Computers,DC=[domain],DC=local /select ".NET 4.5.2" "7-Zip" Chrome CutePDF Firefox Flash "Flash (IE)" "Java 8" "Java 7" Malwarebytes Silverlight "Reader 11" /audit /silent Audit_Report.txt

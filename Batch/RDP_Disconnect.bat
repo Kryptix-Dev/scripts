@@ -1,0 +1,1 @@
+tscon.exe 0 /dest:console

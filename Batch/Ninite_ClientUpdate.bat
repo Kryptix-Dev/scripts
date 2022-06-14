@@ -1,0 +1,1 @@
+niniteone.exe /remote ad:OU=MRB Computers,DC=[domain],DC=local /select "7-Zip" Air Chrome Firefox Flash "Flash (IE)" Malwarebytes Silverlight Super /updateonly /disableautoupdate /silent Client_updates.txt
