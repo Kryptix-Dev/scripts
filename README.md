@@ -23,6 +23,58 @@ Uploaded are the key scripts I used to setup a custom launching system for apps 
 
 ----------------
 
+## Batch
+
+### Any Key.bat
+
+This was a fun script I created to prank my co-workers based on ideas I found online.  Once it's launched, it asks the user to type in the "Any" key.  Since it doesn't exist on a keyboard, it'll just keep prompting a few times before exiting.  I didn't bother with running a loop as it was easier to just copy the text a few times.
+
+### Drive_Mapper.bat
+
+This was used to map network drives while at work to make it easier than manually mapping.  This was used for one particular user who had an issue that couldn't be resolved where their network drive would continually unmap.  That user just needed to run this and it would remap the drive.
+
+### ImageX.bat
+
+I created this as an early attempt to work with images for setting up desktops.  It worked well enough for a one-off rebuild, but not as well for setting up dozens of machines at a time.
+
+### Logged On User.bat
+
+I don't recall how much of this script I found and modified as I didn't add notes, but I used this to remotely check if a computer was on the network at a given time and who was logged in.  Because we had many computers where multiple people could sign in, it was useful to see who was logged in.
+
+### Merge MP3.bat
+
+This one I used at home.  I wanted an easy way to merge multiple MP3 files of audiobooks into one file instead of dozens of individual files.
+
+### Ninite Reports
+
+These are a series of scripts that I created to generate reports on both workstations and servers.  This was my first attempt to run these until I researched ways to do this in Powershell.
+
+### RDP_Disconnect.bat
+
+Just a simpel script to disconnect the active RDP session while I was logged into a computer.  Well, this was less for me than for managers who needed to RDP into a DVR system and had a tendency of closing the window than to properly disconnect.
+
+### Reboot_Script.bat 
+
+This may have been another script that I found online, but I used in a few instances where some employees would have an issue with their computers and a reboot would fix it, but they wouldn't reboot.  I would copy this file to the desktop and have the employee run this to get them to reboot.  It was an effective tool to fix many simple issues.
+
+### Remotely Apply a GP Update.bat 
+
+At one of my previous employers, their AD infrastructure wasn't setup correctly and some Group Policies wouldn't properly reply, which meant a refresh was needed to correct.  This way, I could run the command without needing to drive to the location or connect remotely.
+
+### Set Default Printer for all Users.bat 
+
+Used for one-off situations where I needed to add a specific printer to multiple machines after one was replaced.  See above about the GPs not applying properly and why this was used instead.
+
+----------------
+
+## Powershell
+
+### BackupRestore_Directory_Report.ps1
+
+I created this to generate a report based on the files in a folder that was restored from a backup.  This was part of my process every month where I would contact a random employee and asked them to give me a folder name I can restore to make sure the backup files were not corrupted.  Once they verified via email, I would copy that email with this report and save that in a folder to present to auditors to show our backups were being tested and verified.
+
+----------------
+
 ## VBScript
 
 ### Launcher.vbs
