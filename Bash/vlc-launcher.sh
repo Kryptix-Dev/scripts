@@ -1,17 +1,16 @@
 #=====================================================================================#
-#Ver 1.1
-#	Added pactl command to set volume
-#	Added sleep to allow delay before volume changes
-#	Run 'pactl list sinks' to get device ID for active audio device
+#Ver 1.2
+#	Updated pactl command to use master volume instead of a specific sink
+#	a.k.a. a specific device.  This allows it to be more consistent.
 #=====================================================================================#
 #!/bin/bash
 
 if pgrep 'vlc' ; then
 	pkill vlc
 	sleep 0.25s
-	pactl set-sink-volume 277 50%
+	pactl set-sink-volume 0 50%
 else 
-	pactl set-sink-volume 277 25%
+	pactl set-sink-volume 0 15%
 	sleep 0.25s
 	cvlc --random --quiet $HOME/Music/
 fi
