@@ -11,6 +11,9 @@ Used to automate scans with ClamAV, export a log file on the results and only sh
 ### vlc-launcher.sh
 I wasn't happy with the audio library manager I was using as it was slow to respond, and I already had VLC installed.  I didn't want to deal with the hassle of launching VLC, going to the media library manager, selecting all my music, hitting play and making sure it's on random selection.  Why not streamline all that?  I researched the command line options for VLC to play a directory with random selection and to suppress unhelpful error messages.  I then also found pgrep to find the process and used if:else to turn the command into a toggle.  That way, if VLC isn't running, it'll start it.  If it is running, it'll stop the process.
 
+### episode-merger.sh
+I like to backup my videos, and because some episodes are split into two, they can be saved as two separate files.  To keep these files cleaner and to keep the paired episodes together, I looked for a way to merge them.  After some searching online, I found the ffmpeg guide to merge video files.  From there, I broke it down backwards.  Rather than manually merging files, I added to the scrip to automate it.  I found mapfile to take a list of file names and turn them into an array so I can process two episodes at a time.  To gererate the list, I used ls to generate the file from the files in a directory.  I'll have to look around more to see if I can automate cleaning the file for me.  For now, I open the generated file, reorder the files as necessary and then add an interger in the first line to represent the number of files to merge.  I put that in a variable to count the times the loop runs and exit once all the files are merged so it isn't stuck in an infinite loop.  Ran some tests, and I now have merged files!
+
 ----------------
 
 ## Desktop Setup
